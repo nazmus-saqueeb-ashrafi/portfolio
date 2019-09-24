@@ -1,2 +1,64 @@
 <div>Icons made by <a href="https://www.flaticon.com/authors/nhor-phai" title="Nhor Phai">Nhor Phai</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
 
+p = h6
+
+line height 0 to put on top of each other
+
+
+/* Start about */
+
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-heading h2 {
+  text-align: center;
+}
+
+.about-heading h6 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-details p {
+  width: 76%;
+  transform: translateX(105px);
+}
+
+.profile-img {
+  flex: 1;
+  margin-right: 5rem;
+}
+
+.about-details {
+  flex: 1;
+}
+
+.social-media-top {
+  margin-left: 230px;
+  margin-right: -50px;
+  margin-top: 3.5rem;
+}
+
+.profile-img img {
+  margin-left: 0rem;
+}
+
+.container-about {
+  width: 70%;
+  max-width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* End about */
+
+
+
+
+footer {
+  background-color: #1b1a1a;
+}
