@@ -24,14 +24,14 @@
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <div class="menu-toggler">
         <div class="bar half start"></div>
         <div class="bar "></div>
         <div class="bar half end"></div>
       </div>
       <nav class="top-nav">
-        <ul class="nav-list">
+        <ul class="nav-list hidden-menu">
           <li>
             <a href="index.html" class="nav-link">Home</a>
           </li>
@@ -45,13 +45,14 @@
             <a href="#portfolio" class="nav-link">Portfolio</a>
           </li>
           <li>
-            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#skill-tech-bar" class="nav-link">Skills</a>
           </li>
           <li>
             <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
       </nav>
+
       <div class="landing-text">
         <h1>Nazmus Ashrafi</h1>
         <h6>Software Engineer</h6>
@@ -84,10 +85,10 @@
     </header>
     <section class="about" id="about">
       <div class="container container-about">
-        <div class="profile-img">
+        <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
           <img src="/images/undraw_male_avatar_323b.svg" alt="avatar" />
         </div>
-        <div class="about-details">
+        <div class="about-details" data-aos="fade-left" data-aos-delay="600">
           <div class="about-heading">
             <h2>About Me</h2>
             <h6>Who I am</h6>
@@ -171,7 +172,7 @@
           <h6>What I can do for you</h6>
         </div>
         <div class="my-skills">
-          <div class="skill">
+          <div class="skill" data-aos="fade-in" data-aos-delay="300">
             <div class="icon-container web-dev-pic">
               <img
                 src="/images/Web design & development icon.svg"
@@ -185,7 +186,7 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div class="skill">
+          <div class="skill" data-aos="fade-in" data-aos-delay="600">
             <div class="icon-container">
               <img
                 src="/images/Backend programming icon.svg"
@@ -199,7 +200,7 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div class="skill">
+          <div class="skill" data-aos="fade-in" data-aos-delay="900">
             <div class="icon-container">
               <img
                 src="/images/Repair and maintenance icon.svg"
@@ -222,8 +223,13 @@
           <h2>Portfolio</h2>
           <h6>View my work</h6>
         </div>
+        <hr class="hr-divider-portfolio" />
         <div class="portfolio-item">
-          <div class="portfolio-description">
+          <div
+            class="portfolio-description"
+            data-aos="fade-right"
+            data-aos-delay="600"
+          >
             <h6>Web Design</h6>
             <h3>From Scratch</h3>
             <p>
@@ -232,15 +238,28 @@
             </p>
             <a href="#" class="cta">Details</a>
           </div>
-          <div class="portfolio-img has-margin-right-2">
+          <div
+            class="portfolio-img has-margin-right-2"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
             <img src="/images/coming soon.svg" alt="coming soon image" />
           </div>
         </div>
+        <hr class="hr-divider-portfolio" />
         <div class="portfolio-item">
-          <div class="portfolio-img has-margin-right">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="1200"
+          >
             <img src="/images/web-dev-img.svg" alt="web development image" />
           </div>
-          <div class="portfolio-description">
+          <div
+            class="portfolio-description "
+            data-aos="fade-left"
+            data-aos-delay="900"
+          >
             <h6>Web Development</h6>
             <h3>Assorted Websites</h3>
             <p>
@@ -250,8 +269,13 @@
             <a href="#" class="cta">Details</a>
           </div>
         </div>
+        <hr class="hr-divider-portfolio" />
         <div class="portfolio-item">
-          <div class="portfolio-description">
+          <div
+            class="portfolio-description"
+            data-aos="fade-right"
+            data-aos-delay="1800"
+          >
             <h6>Backend Server-side</h6>
             <h3>Full Functionality</h3>
             <p>
@@ -260,15 +284,28 @@
             </p>
             <a href="#" class="cta">Details</a>
           </div>
-          <div class="portfolio-img has-margin-right-2">
+          <div
+            class="portfolio-img has-margin-right-2"
+            data-aos="fade-left"
+            data-aos-delay="1500"
+          >
             <img src="/images/coming soon.svg" alt="coming soon image" />
           </div>
         </div>
+        <hr class="hr-divider-portfolio" />
         <div class="portfolio-item ">
-          <div class="portfolio-img has-margin-right">
+          <div
+            class="portfolio-img has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="2000"
+          >
             <img src="/images/coming soon.svg" alt="coming soon image" />
           </div>
-          <div class="portfolio-description">
+          <div
+            class="portfolio-description "
+            data-aos="fade-left"
+            data-aos-delay="1700"
+          >
             <h6>Repair & Maintenance</h6>
             <h3>Full Website Support</h3>
             <p>
@@ -278,12 +315,18 @@
             <a href="#" class="cta">Details</a>
           </div>
         </div>
+        <hr class="hr-divider-portfolio" />
       </div>
     </section>
     <!--Loading bars-->
-    <section class="skills-tech" id="skill-tech">
+    <section
+      class="skills-tech"
+      id="skill-tech"
+      data-aos="fade-down"
+      data-aos-delay="300"
+    >
       <div class="container-bars">
-        <div class="section-heading">
+        <div class="section-heading" id="skill-tech-bar">
           <h2>Skills</h2>
           <h6>Technologies I know</h6>
         </div>
@@ -316,7 +359,12 @@
       </div>
     </section>
     <!---->
-    <section class="contact" id="contact">
+    <section
+      class="contact"
+      id="contact"
+      data-aos="fade-up"
+      data-aos-delay="300"
+    >
       <div class="container">
         <div class="section-heading">
           <h2>Contact</h2>
@@ -355,9 +403,11 @@
     </section>
     <footer class="footer">
       <hr class="hr" />
-      <div class="up" id="up">
-        <i class="fas fa-chevron-up"></i>
-      </div>
+      <a href="#header">
+        <div class="up" id="up">
+          <i class="fas fa-chevron-up"></i>
+        </div>
+      </a>
       <p>Connect with me :</p>
       <div class="social-media-bottom">
         <div class="nav-list">
@@ -424,7 +474,7 @@
       </div>
 
       <nav class="bottom-nav">
-        <ul class="nav-list">
+        <ul class="nav-list nav-list-bottom">
           <li>
             <a href="index.html" class="nav-link-bottom">Home</a>
           </li>
@@ -438,7 +488,7 @@
             <a href="#portfolio" class="nav-link-bottom">Portfolio</a>
           </li>
           <li>
-            <a href="#skills" class="nav-link-bottom">Skills</a>
+            <a href="#skill-tech-bar" class="nav-link-bottom">Skills</a>
           </li>
           <li>
             <a href="#contact" class="nav-link-bottom contact-bottom"
