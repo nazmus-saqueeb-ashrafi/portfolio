@@ -62,3 +62,28 @@ line height 0 to put on top of each other
 footer {
   background-color: #1b1a1a;
 }
+
+
+Fully functional 
+
+.plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-74.5%, -82%) scale(0.19);
+  width: 1000px;
+  text-align: center;
+  z-index: 1;
+}
+
+.pencil {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -79%) scale(0.28);
+  width: 1000px;
+  text-align: center;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {

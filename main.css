@@ -121,48 +121,7 @@ h3 {
 
 /* */
 
-/* leaves,plus,pencil,portal,ghost */
-
-.leaves {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-95%, -60%) scale(0.2);
-  width: 100%;
-  text-align: center;
-  z-index: 1;
-  top: 0px;
-}
-
-.leaf-1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-20%, -40%) scale(0.7);
-  width: 100%;
-  text-align: center;
-  z-index: 1;
-}
-
-.leaf-2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -20%) scale(1);
-  width: 100%;
-  text-align: center;
-  z-index: 2;
-}
-
-.leaf-3 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-66%, 22%) scale(1);
-  width: 100%;
-  text-align: center;
-  z-index: 1;
-}
+/* plus,pencil,portal */
 
 .portal {
   position: relative;
@@ -209,7 +168,7 @@ h3 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-74.5%, -82%) scale(0.17);
+  transform: translate(-74.5%, -92%) scale(0.19);
   width: 1000px;
   text-align: center;
   z-index: 1;
@@ -219,21 +178,12 @@ h3 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-25%, -79%) scale(0.28);
+  transform: translate(-30.2%, -40%) scale(0.24);
   width: 1000px;
   text-align: center;
   z-index: 1;
 }
 
-.ghost {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-110.5%, -20%) scale(0.11);
-  width: 1000px;
-  text-align: center;
-  z-index: 1;
-}
 /* */
 
 /* Start global */
@@ -306,6 +256,32 @@ header {
   height: 100%;
   position: relative;
   height: 100vh;
+}
+
+.logo {
+  padding: 38px 40px;
+}
+
+.logo h1 {
+  margin-left: 8px;
+  font-family: "FredokaOne-Regular";
+  font-size: 23px;
+  background: linear-gradient(to top, #2af598, #009efd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+.logo-dot {
+  background: #707070;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 1px;
+}
+
+.logo h6 {
+  margin-left: 54px;
+  font-size: 15px;
 }
 
 .top-nav {
@@ -409,17 +385,21 @@ li {
   z-index: 1;
 }
 
+.landing-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
 .landing-text h1 {
   font-size: 7rem;
   font-family: "FredokaOne-Regular", sans-serif;
   letter-spacing: 1px;
   user-select: none;
-}
-
-.landing-text h6 {
-  font-size: 2rem;
-  font-weight: 200;
-  font-family: "Jaldi-Regular", sans-serif;
 }
 /* End header */
 
@@ -722,7 +702,7 @@ input[type="submit"] {
   background: linear-gradient(to top, #009efd, #2af598);
   border: none;
   border-radius: 10px;
-  color: #eff1ef;
+  color: #111111;
   margin-top: 10px;
   margin-bottom: 80px;
   padding: 0.8rem 1.2rem;
@@ -787,13 +767,13 @@ footer p {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(0, 158, 253, 0.99);
+    box-shadow: 0 0 0 0 rgba(42, 245, 152, 0.99);
   }
   70% {
     box-shadow: 0 0 0 0.8rem rgba(42, 245, 152, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(0, 158, 253, 0);
+    box-shadow: 0 0 0 0 rgba(42, 245, 152, 0);
   }
 }
 
@@ -801,7 +781,7 @@ footer p {
 
 /* Media Queries start */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 855px) {
   body {
     overflow-x: hidden;
   }
@@ -815,11 +795,11 @@ footer p {
   }
 
   .plus {
-    transform: translate(-71%, -79%) scale(0.16);
+    transform: translate(-71%, -92%) scale(0.16);
   }
 
   .pencil {
-    transform: translate(-28.5%, -79%) scale(0.23);
+    transform: translate(-33%, -42%) scale(0.23);
   }
 
   .hidden-menu {
@@ -925,6 +905,10 @@ footer p {
     overflow-x: hidden;
   }
 
+  .logo {
+    padding: 20px 15px;
+  }
+
   .menu-toggler {
     top: 2rem;
     right: 2rem;
@@ -939,11 +923,11 @@ footer p {
   }
 
   .plus {
-    transform: translate(-68%, -79%) scale(0.13);
+    transform: translate(-68%, -93%) scale(0.13);
   }
 
   .pencil {
-    transform: translate(-31.8%, -77%) scale(0.2);
+    transform: translate(-35.6%, -40%) scale(0.2);
   }
 
   .nav-link {
