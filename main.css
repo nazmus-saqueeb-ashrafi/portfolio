@@ -168,7 +168,7 @@ h3 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-74.5%, -92%) scale(0.19);
+  transform: translate(-70.5%, -92%) scale(0.19);
   width: 1000px;
   text-align: center;
   z-index: 1;
@@ -280,7 +280,7 @@ header {
 }
 
 .logo h6 {
-  margin-left: 54px;
+  margin-left: 30px;
   font-size: 15px;
 }
 
@@ -795,11 +795,23 @@ footer p {
   }
 
   .plus {
-    transform: translate(-71%, -92%) scale(0.16);
+    transform: translate(-68%, -92%) scale(0.16);
   }
 
   .pencil {
     transform: translate(-33%, -42%) scale(0.23);
+  }
+
+  .circ-1 {
+    display: none;
+  }
+
+  .circ-2 {
+    display: none;
+  }
+
+  .circ-3 {
+    display: none;
   }
 
   .hidden-menu {
@@ -923,7 +935,7 @@ footer p {
   }
 
   .plus {
-    transform: translate(-68%, -93%) scale(0.13);
+    transform: translate(-65%, -93%) scale(0.13);
   }
 
   .pencil {
