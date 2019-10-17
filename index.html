@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,6 +21,7 @@
     />
 
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.scss" />
   </head>
 
   <body>
@@ -28,7 +29,16 @@
       <div class="logo">
         <h1>Nazmus Ashrafi<span class="logo-dot">.</span></h1>
         <h6>Web Designer & Developer</h6>
+        <div class="container-toggle">
+          <input
+            type="checkbox"
+            id="switch"
+            name="theme"
+            class="toggle-button"
+          /><label for="switch">Toggle</label>
+        </div>
       </div>
+
       <div class="menu-toggler">
         <div class="bar half start"></div>
         <div class="bar "></div>
@@ -63,15 +73,35 @@
       </div>
 
       <div class="plus">
-        <img src="/images/plus.svg" alt="plus" class="plus" />
+        <img src="/images/plus.svg" alt="plus" class="plus plus-dark" />
+        <img
+          src="/images/plus bright.svg"
+          alt="plus"
+          class="plus plus-bright"
+        />
       </div>
       <div class="pencil">
         <img src="/images/pencil.svg" alt="pencil" class="pencil" />
       </div>
       <div class="portal">
+        <img
+          src="/images/Ellipse 2 bright.svg"
+          alt=""
+          class="circ-2 circ-2-bright"
+        />
         <img src="/images/Ellipse 1.svg" alt="" class="circ-1" />
         <img src="/images/Ellipse 2.svg" alt="" class="circ-2" />
+        <img
+          src="/images/Ellipse 1 bright.svg"
+          alt=""
+          class="circ-1 circ-1-bright"
+        />
         <img src="/images/Elipse 3.svg" alt="" class="circ-3" />
+        <img
+          src="/images/Ellipse 3 bright.svg"
+          alt=""
+          class="circ-3 circ-3-bright"
+        />
       </div>
 
       <div class="container-scroll">
