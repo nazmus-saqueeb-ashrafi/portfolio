@@ -34,3 +34,117 @@ let trans = () => {
     document.documentElement.classList.remove("transition");
   }, 1000);
 };
+
+/* phone anim */
+
+TweenMax.to(".phone", 0.2, {
+  rotation: 50,
+  rotation: 7,
+  zIndex: 1,
+  ease: SteppedEase.config(2000),
+  delay: 0.6
+});
+
+TweenMax.to(".phone", 0.2, {
+  rotation: 16,
+  zIndex: 1,
+  ease: SteppedEase.config(2000),
+  delay: 0.5
+});
+
+TweenMax.to(".phone", 0.2, {
+  rotation: 7,
+  zIndex: 1,
+  ease: SteppedEase.config(2000),
+  delay: 1
+});
+
+TweenMax.to(".scr1", 1, {
+  scale: 0.9,
+  zIndex: 2,
+  ease: Power3.easeOut,
+  delay: 2
+});
+
+TweenMax.to(".scrblk", 0.8, {
+  y: 3,
+  x: 0,
+  opacity: 1,
+  scale: 0.9,
+  ease: SteppedEase.config(2000),
+  zIndex: 1,
+  delay: 2.3
+});
+
+TweenMax.to(".land", 1, {
+  scale: 0.9,
+  zIndex: 1,
+  ease: Power3.easeOut,
+  delay: 4.1
+});
+
+TweenMax.to(".scr1", 0.2, {
+  y: -200,
+  x: -200,
+  rotation: -45,
+  opacity: 0,
+  ease: SteppedEase.config(2000),
+  zIndex: 2,
+  delay: 4
+});
+
+TweenMax.to(".land", 2, {
+  y: -200,
+  x: 25,
+  rotation: 0,
+  opacity: 0,
+  ease: SteppedEase.config(2000),
+  zIndex: 2,
+  delay: 6
+});
+
+TweenMax.to(".scr2", 1, {
+  scale: 0.9,
+  zIndex: 2,
+  ease: Power3.easeOut,
+  delay: 7.1
+});
+
+TweenMax.to(".scr2", 2, {
+  y: -200,
+  x: 25,
+  rotation: 0,
+  opacity: 0,
+  ease: SteppedEase.config(2000),
+  zIndex: 2,
+  delay: 9
+});
+
+TweenMax.to(".scr3", 1, {
+  scale: 0.9,
+  zIndex: 2,
+  ease: Power3.easeOut,
+  delay: 10.1
+});
+
+TweenMax.to(".scr3", 0.2, {
+  y: -200,
+  x: 200,
+  rotation: 45,
+  opacity: 0,
+  ease: SteppedEase.config(2000),
+  zIndex: 2,
+  delay: 12
+});
+
+TweenMax.to(".scrblk", 0.8, {
+  y: 3,
+  x: 0,
+  opacity: 0,
+  scale: 0.9,
+  ease: SteppedEase.config(2000),
+  zIndex: 1,
+  delay: 11
+});
+
+/* phone anim end*/
