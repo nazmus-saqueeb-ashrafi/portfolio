@@ -872,7 +872,7 @@ footer p {
   }
 
   input:checked + label:after {
-    left: calc(100% - 5px);
+    left: calc(100% - 15px);
     transform: translateX(-100%);
   }
 
