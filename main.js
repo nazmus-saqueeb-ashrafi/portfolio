@@ -147,4 +147,35 @@ TweenMax.to(".scrblk", 0.8, {
   delay: 11
 });
 
+TweenMax.to(".phone", 0.5, {
+  x: 900,
+  zIndex: 1,
+  ease: SteppedEase.config(2000),
+  delay: 13
+});
+
+TweenMax.to(".computer", 0.5, {
+  x: 0,
+  zIndex: 1,
+  ease: SteppedEase.config(2000),
+  delay: 13
+});
+
+TweenMax.to(".computer", 0.5, {
+  x: -50,
+  scale: 0.5,
+  zIndex: 1,
+  ease: SteppedEase.config(2000),
+  delay: 14
+});
+
+TweenMax.to(".phone-final", 0.5, {
+  opacity: 1,
+  zIndex: -1,
+  x: 120,
+  scale: 1,
+  ease: SteppedEase.config(2000),
+  delay: 14
+});
+
 /* phone anim end*/
