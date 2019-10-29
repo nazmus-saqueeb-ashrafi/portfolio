@@ -1,3 +1,5 @@
+/* Dark mode mechanics */
+
 html[data-theme="dark"] {
   background-color: #212020;
 
@@ -65,6 +67,10 @@ html[data-theme="dark"] {
   }
 }
 
+/* Dark mode mechanics end */
+
+/* Start global v1 */
+
 body {
   overflow-x: hidden;
 }
@@ -73,6 +79,8 @@ html {
   scroll-behavior: smooth;
   background-color: #f7f7f7;
 }
+
+/* Start global v1 */
 
 /* fonts */
 
@@ -241,7 +249,7 @@ h1 {
 
 /* */
 
-/* Start global */
+/* Start global v2 */
 
 * {
   margin: 0;
@@ -269,13 +277,29 @@ img {
   width: 100%;
 }
 
-/* End global */
+/* End global v2 */
 
-/* Start reusable */
+/* Start reusable/containers */
 
 .container {
   width: 90%;
   max-width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container-nav {
+  width: 90%;
+  max-width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container-landing {
+  width: 97%;
+  max-width: 200rem;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -303,7 +327,7 @@ img {
   margin-left: 8rem;
 }
 
-/* End reusable */
+/* End reusable/containers */
 
 /* Start header */
 header {
@@ -891,11 +915,10 @@ footer p {
 
 .container-toggle {
   position: absolute;
-  top: -4.3%;
-  left: 58%;
   transform: scale(0.3);
   width: 100%;
   text-align: center;
+  margin-left: 40px;
 }
 
 /* End night mode */
@@ -1484,6 +1507,20 @@ html.transition *:after {
   width: 50%;
 }
 
+.container-toggle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  position: absolute;
+  top: 4.86%;
+  left: 42.6%;
+  transform: scale(0.3);
+  width: 100%;
+  text-align: center;
+  margin-left: 0px;
+}
+
 .logo {
   transform: translateX(-50px);
 }
@@ -1503,19 +1540,23 @@ html.transition *:after {
   }
 
   .container-toggle {
-    left: 45%;
+    left: 35.6%;
   }
 }
 
 @media screen and (max-width: 691px) {
   .container-toggle {
-    left: 40%;
+    left: 30%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .menu-toggler {
-    top: 23px;
+    top: 33px;
+  }
+
+  .container-toggle {
+    top: -5.86%;
   }
 }
 
@@ -1528,6 +1569,16 @@ html.transition *:after {
 @media screen and (max-width: 582px) {
   .logo h1 {
     transform: translateX(40px);
+  }
+}
+
+@media screen and (max-width: 516px) {
+  .container-toggle {
+    top: -10%;
+  }
+
+  .menu-toggler {
+    top: 35%;
   }
 }
 
