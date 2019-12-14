@@ -63,10 +63,22 @@ html[data-theme="dark"] .phone-anim {
   background-color: #212020;
 }
 
+html[data-theme="dark"] .belt1dark {
+  display: inline;
+}
+
+html[data-theme="dark"] .belt1 {
+  display: none;
+}
+
 @media screen and (max-width: 1364px) {
   html[data-theme="dark"] .pencil-dark {
     display: none;
   }
+}
+
+.belt1dark {
+  display: none;
 }
 
 /* Dark mode mechanics end */
@@ -914,14 +926,14 @@ textarea {
 
 input[type="submit"] {
   width: initial;
-  background: -webkit-gradient(linear, left bottom, left top, from(#0968bb), to(#0968bb));
-  background: linear-gradient(to top, #0968bb, #0968bb);
+  background: -webkit-gradient(linear, left bottom, left top, from(#6fd9a9), to(#6fd9a9));
+  background: linear-gradient(to top, #6fd9a9, #6fd9a9);
   border: none;
-  border-radius: 5px;
-  color: #ffffff;
-  margin-top: 10px;
+  border-radius: 6px;
+  color: #0f0f0f;
+  margin-top: 15px;
   margin-bottom: 80px;
-  padding: 0.8rem 1.2rem;
+  padding: 0.9rem 5.5rem;
   cursor: pointer;
 }
 
@@ -1712,6 +1724,7 @@ html.transition *:after {
   width: 100%;
   text-align: center;
   margin-left: 0px;
+  z-index: -999;
 }
 
 .logo {
