@@ -179,3 +179,18 @@ TweenMax.to(".phone-final", 0.5, {
 });
 
 /* phone anim end*/
+
+/* scroll lock when menu opens*/
+
+const disScroll = () => {
+  const burger = document.querySelector(".menu-toggler");
+  const body = document.querySelector(".body");
+
+  burger.addEventListener("click", () => {
+    body.classList.toggle("scrolldis");
+  });
+};
+
+disScroll();
+
+/* scroll lock when menu opens end*/
