@@ -184,9 +184,14 @@ TweenMax.to(".phone-final", 0.5, {
 
 const disScroll = () => {
   const burger = document.querySelector(".menu-toggler");
+  const links = document.querySelector(".nav-list");
   const body = document.querySelector(".body");
 
   burger.addEventListener("click", () => {
+    body.classList.toggle("scrolldis");
+  });
+
+  links.addEventListener("click", () => {
     body.classList.toggle("scrolldis");
   });
 };

@@ -1796,12 +1796,6 @@ html.transition *:after {
 }
 
 /* height adjustment for cta buttons end */
-/* scrolldis to disable scroll once menu open */
-.scrolldis {
-  overflow: hidden;
-}
-
-/* scrolldis to disable scroll once menu open end */
 /* iphone 5 */
 @media screen and (max-width: 322px) {
   .landing-btns {
@@ -1810,4 +1804,10 @@ html.transition *:after {
 }
 
 /* iphone 5 end */
+/* scrolldis to disable scroll once menu open */
+.scrolldis {
+  overflow: hidden;
+}
+
+/* scrolldis to disable scroll once menu open end */
 /*# sourceMappingURL=main.css.map */
