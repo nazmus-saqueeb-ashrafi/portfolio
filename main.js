@@ -1,10 +1,10 @@
-$(document).ready(function() {
-  $(".menu-toggler").on("click", function() {
+$(document).ready(function () {
+  $(".menu-toggler").on("click", function () {
     $(this).toggleClass("open");
     $(".top-nav").toggleClass("open");
   });
 
-  $(".top-nav .nav-link").on("click", function() {
+  $(".top-nav .nav-link").on("click", function () {
     $(".menu-toggler").removeClass("open");
     $(".top-nav").removeClass("open");
   });
@@ -12,13 +12,13 @@ $(document).ready(function() {
   AOS.init({
     easing: "ease",
     duration: 1800,
-    once: true
+    once: true,
   });
 });
 
 var checkbox = document.querySelector("input[name=theme]");
 
-checkbox.addEventListener("change", function() {
+checkbox.addEventListener("change", function () {
   if (this.checked) {
     trans();
     document.documentElement.setAttribute("data-theme", "dark");
@@ -42,28 +42,28 @@ TweenMax.to(".phone", 0.2, {
   rotation: 7,
   zIndex: 1,
   ease: SteppedEase.config(2000),
-  delay: 0.6
+  delay: 0.6,
 });
 
 TweenMax.to(".phone", 0.2, {
   rotation: 16,
   zIndex: 1,
   ease: SteppedEase.config(2000),
-  delay: 0.5
+  delay: 0.5,
 });
 
 TweenMax.to(".phone", 0.2, {
   rotation: 7,
   zIndex: 1,
   ease: SteppedEase.config(2000),
-  delay: 1
+  delay: 1,
 });
 
 TweenMax.to(".scr1", 1, {
   scale: 0.9,
   zIndex: 2,
   ease: Power3.easeOut,
-  delay: 2
+  delay: 2,
 });
 
 TweenMax.to(".scrblk", 0.8, {
@@ -73,14 +73,14 @@ TweenMax.to(".scrblk", 0.8, {
   scale: 0.9,
   ease: SteppedEase.config(2000),
   zIndex: 1,
-  delay: 2.3
+  delay: 2.3,
 });
 
 TweenMax.to(".land", 1, {
   scale: 0.9,
   zIndex: 1,
   ease: Power3.easeOut,
-  delay: 4.1
+  delay: 4.1,
 });
 
 TweenMax.to(".scr1", 0.2, {
@@ -90,7 +90,7 @@ TweenMax.to(".scr1", 0.2, {
   opacity: 0,
   ease: SteppedEase.config(2000),
   zIndex: 2,
-  delay: 4
+  delay: 4,
 });
 
 TweenMax.to(".land", 2, {
@@ -100,14 +100,14 @@ TweenMax.to(".land", 2, {
   opacity: 0,
   ease: SteppedEase.config(2000),
   zIndex: 2,
-  delay: 6
+  delay: 6,
 });
 
 TweenMax.to(".scr2", 1, {
   scale: 0.9,
   zIndex: 2,
   ease: Power3.easeOut,
-  delay: 7.1
+  delay: 7.1,
 });
 
 TweenMax.to(".scr2", 2, {
@@ -117,14 +117,14 @@ TweenMax.to(".scr2", 2, {
   opacity: 0,
   ease: SteppedEase.config(2000),
   zIndex: 2,
-  delay: 9
+  delay: 9,
 });
 
 TweenMax.to(".scr3", 1, {
   scale: 0.9,
   zIndex: 2,
   ease: Power3.easeOut,
-  delay: 10.1
+  delay: 10.1,
 });
 
 TweenMax.to(".scr3", 0.2, {
@@ -134,7 +134,7 @@ TweenMax.to(".scr3", 0.2, {
   opacity: 0,
   ease: SteppedEase.config(2000),
   zIndex: 2,
-  delay: 12
+  delay: 12,
 });
 
 TweenMax.to(".scrblk", 0.8, {
@@ -144,21 +144,21 @@ TweenMax.to(".scrblk", 0.8, {
   scale: 0.9,
   ease: SteppedEase.config(2000),
   zIndex: 1,
-  delay: 11
+  delay: 11,
 });
 
 TweenMax.to(".phone", 0.5, {
   x: 900,
   zIndex: 1,
   ease: SteppedEase.config(2000),
-  delay: 13
+  delay: 13,
 });
 
 TweenMax.to(".computer", 0.5, {
   x: 0,
   zIndex: 1,
   ease: SteppedEase.config(2000),
-  delay: 13
+  delay: 13,
 });
 
 TweenMax.to(".computer", 0.5, {
@@ -166,7 +166,7 @@ TweenMax.to(".computer", 0.5, {
   scale: 0.5,
   zIndex: 1,
   ease: SteppedEase.config(2000),
-  delay: 14
+  delay: 14,
 });
 
 TweenMax.to(".phone-final", 0.5, {
@@ -175,7 +175,7 @@ TweenMax.to(".phone-final", 0.5, {
   x: 120,
   scale: 1,
   ease: SteppedEase.config(2000),
-  delay: 14
+  delay: 14,
 });
 
 /* phone anim end*/
@@ -199,3 +199,26 @@ const disScroll = () => {
 disScroll();
 
 /* scroll lock when menu opens end*/
+
+/* video popup*/
+const toggle = () => {
+  var trailer = document.querySelector(".trailer");
+  const demobtn = document.querySelector(".cta-demo");
+  const closebtn = document.querySelector(".close");
+  var video = document.querySelector("video");
+
+  demobtn.addEventListener("click", () => {
+    trailer.classList.toggle("active");
+  });
+
+  closebtn.addEventListener("click", () => {
+    trailer.classList.toggle("active");
+  });
+
+  video.pause();
+  video.currentTime = 0;
+};
+
+toggle();
+
+/* video popup end*/
